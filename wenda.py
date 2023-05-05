@@ -209,8 +209,6 @@ def search_bing(search_query,step = 0):
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36 Edg/94.0.992.31'}
     
-    import pdb
-    pdb.set_trace()
     with requests.Session() as session:
         res = session.get(url, headers=headers)
 
@@ -226,7 +224,7 @@ def search_bing(search_query,step = 0):
         item = '* [{}]({})'.format(text, href)
         items.append(item)
 
-        if len(items) >= 3:
+        if len(items) >= 2:
             break
     
     ret = ''
