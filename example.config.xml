@@ -13,7 +13,7 @@
         </property>
         <property>
             <name>LLM_Type</name>
-            <value>rwkv</value>
+            <value>glm6b</value>
             <description>LLM模型类型:glm6b、rwkv、llama</description>
         </property>
     </General>

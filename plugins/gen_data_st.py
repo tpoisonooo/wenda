@@ -12,6 +12,7 @@ import chardet
 import os
 import sys
 import time
+from bs4 import BeautifulSoup
 os.chdir(sys.path[0][:-8])
 
 parser = argparse.ArgumentParser(description='Wenda config')
@@ -26,7 +27,7 @@ os.environ['wenda_'+'Port'] = str(args.Port)
 os.environ['wenda_'+'Logging'] = str(args.Logging)
 os.environ['wenda_'+'LLM_Type'] = str(args.LLM_Type)
 
-from common import success_print
+from common import success_print, error_print
 from common import error_helper
 from common import settings
 from common import CounterLock
@@ -67,6 +68,18 @@ def clac_embedding(texts, embeddings, metadatas):
         else:
             vectorstore.merge_from(vectorstore_new)
 
+def remove_html_and_lower(fromfile: str):
+    tofile = '/tmp/text'
+    with open(fromfile) as f:
+        lines = f.readlines()
+        lines = ''.join(lines)
+        soup = BeautifulSoup(lines, 'html.parser')
+        text = soup.get_text()
+        text = text.lower()
+        with open(tofile, 'w') as writer:
+            writer.write(text)
+    return tofile
+
 def make_index():
     global docs
     text_splitter = CharacterTextSplitter(
@@ -80,42 +93,57 @@ def make_index():
     while embedding_lock.get_waiting_threads()>1:
         time.sleep(0.1)
 
-all_files=[]
 
-for root, dirs, files in os.walk(source_folder_path):
-    for file in files:
-        all_files.append([root, file])
+def get_source(filename):
+    return '/'.join(filename.split('/')[2:])
+
+
+all_files=[]
+with open(os.path.join(source_folder, 'file.list')) as f:
+    while True:
+        filename = f.readline()
+        if not filename:
+            break
+        filename = filename.strip()
+        all_files.append(os.path.join(source_folder, filename))
+
+import pdb
+pdb.set_trace()
 success_print("文件列表生成完成",len(all_files))
 length_of_read=0
 for i in range(len(all_files)):
-    root, file=all_files[i]
+    from_path = all_files[i]
+    # remove html label
+    try:
+        file_path = remove_html_and_lower(from_path)
+    except e:
+        file_path = from_path
+        error_print('remove html label fail {}'.format(str(e)))
+
     data = ""
     title = ""
-    if file.endswith(".pdf"):
-        file_path = os.path.join(root, file)
-        with pdfplumber.open(file_path) as pdf:
-            data_list = []
-            for page in pdf.pages:
-                data_list.append(page.extract_text())
-            data = "\n".join(data_list)
-    else:
-        # txt
-        file_path = os.path.join(root, file)
-        with open(file_path, 'rb') as f:
-            b = f.read()
-            result = chardet.detect(b)
-        with open(file_path, 'r', encoding=result['encoding']) as f:
-            data = f.read()
-    data = re.sub(r'[\n\r]+', "", data)
+
+    # txt
+    with open(file_path, 'rb') as f:
+        b = f.read()
+        result = chardet.detect(b)
+
+    print(from_path)
+    with open(file_path, 'r', encoding=result['encoding'], errors='ignore') as f:
+        data = f.read()
+
+    data = re.sub(r'[\n\r]+', " ", data)
     data = re.sub(r'！', "！\n", data)
     data = re.sub(r'：', "：\n", data)
     data = re.sub(r'。', "。\n", data)
     length_of_read+=len(data)
-    docs.append(Document(page_content=data, metadata={"source": file}))
+
+    docs.append(Document(page_content=data, metadata={"source": get_source(from_path)}))
     if length_of_read > 1e5:
         success_print("处理进度",int(100*i/len(all_files)),f"%\t({i}/{len(all_files)})")
         make_index()
         length_of_read=0
+
 if len(docs) > 0:
     make_index()
 with embedding_lock:

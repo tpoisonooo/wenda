@@ -6,6 +6,8 @@ import datetime
 from bottle import route, response, request, static_file, hook
 import bottle
 import argparse
+import re
+
 parser = argparse.ArgumentParser(description='Wenda config')
 parser.add_argument('-c', type=str, dest="Config", default='config.xml', help="配置文件")
 parser.add_argument('-p', type=int, dest="Port", help="使用端口号")
@@ -138,8 +140,6 @@ def validate():
         request.environ['REQUEST_METHOD'] = HTTP_ACCESS_CONTROL_REQUEST_METHOD
 
 
-
-
 @route('/api/find', method=("POST","OPTIONS"))
 def api_find():
     allowCROS()
@@ -198,7 +198,43 @@ def api_chat_box():
     if response_text == '':
         yield "data: %s\n\n" %json.dumps({"response": ("发生错误，正在重新加载模型"+error)})
         os._exit(0)
-import re
+
+
+def search_bing(search_query,step = 0):
+    import requests
+    import re
+    search_query = search_query.strip()
+    url = 'http://www.bing.com/search?q={}'.format(search_query)
+    
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36 Edg/94.0.992.31'}
+    
+    import pdb
+    pdb.set_trace()
+    with requests.Session() as session:
+        res = session.get(url, headers=headers)
+
+    from bs4 import BeautifulSoup as BS
+    soup = BS(res.text, 'html.parser')
+    td = soup.findAll("h2")
+    items = []
+    for t in td:
+        a = t.find_all('a')[0]
+
+        href = a.get('href')
+        text = a.text
+        item = '* [{}]({})'.format(text, href)
+        items.append(item)
+
+        if len(items) >= 3:
+            break
+    
+    ret = ''
+    if len(items) > 0:
+        ret = '\n\n更多：\n' + '\n'.join(items)
+    return ret
+
+
 @route('/api/chat_stream', method=("POST","OPTIONS"))
 def api_chat_stream():
     allowCROS()
@@ -215,9 +251,10 @@ def api_chat_stream():
     temperature = data.get('temperature')
     if temperature is None:
         temperature = 0.9
-    use_zhishiku = data.get('zhishiku')
-    if use_zhishiku is None:
-        use_zhishiku = False
+    # use_zhishiku = data.get('zhishiku')
+    # if use_zhishiku is None:
+    #     use_zhishiku = False
+    use_zhishiku = True
     keyword = data.get('keyword')
     if keyword is None:
         keyword = prompt
@@ -229,36 +266,50 @@ def api_chat_stream():
         'HTTP_X_REAL_IP') or request.environ.get('REMOTE_ADDR')
     error = ""
     footer = '///'
-    
+
+    bing = search_bing(prompt)
     if use_zhishiku:
         # print(keyword)
         response_d = zhishiku.find(keyword,int(settings.library.Step))
         output_sources = [i['title'] for i in response_d]
         results = '\n'.join([str(i+1)+". "+re.sub('\n\n', '\n', response_d[i]['content']) for i in range(len(response_d))])
-        prompt = 'system: 请扮演一名专业分析师，根据以下内容回答问题：'+prompt + "\n"+ results
-        if bool(settings.library.Show_Soucre == 'True'):
-            footer = "\n### 来源：\n"+('\n').join(output_sources)+'///'
-    with mutex:
-        print("\033[1;32m"+IP+":\033[1;31m"+prompt+"\033[1;37m")
-        try:
-            for response in LLM.chat_one(prompt, history_formatted, max_length, top_p, temperature, zhishiku=use_zhishiku):
-                if (response):
-                    yield response+footer
-        except Exception as e:
-            error = str(e)
-            print("错误", settings.red, error, settings.white)
-            response = ''
-            # raise e
-        torch.cuda.empty_cache()
-    if response == '':
-        yield "发生错误，正在重新加载模型"+error+'///'
-        os._exit(0)
-    if Logging:
-        with session_maker() as session:
-            jl = 记录(时间=datetime.datetime.now(), IP=IP, 问=prompt, 答=response)
-            session.add(jl)
-            session.commit()
-    print(response)
+        prompt = 'system: 请扮演一名程序员，根据以下内容回答问题：'+prompt + "\n"+ results
+        # if bool(settings.library.Show_Soucre == 'True'):
+        #     footer = "\n### 来源：\n"+('\n').join(output_sources)+'///'
+    
+    if len(output_sources) > 0:
+
+        with mutex:
+            print("\033[1;32m"+IP+":\033[1;31m"+prompt+"\033[1;37m")
+            try:
+                val = None
+                for response in LLM.chat_one(prompt, history_formatted, max_length, top_p, temperature, zhishiku=use_zhishiku):
+                    if (response):
+                        value = response
+                        # yield response+footer
+                if bool(settings.library.Show_Soucre == 'True'):
+                    # value = value + "\n###来源：\n"+('\n').join(output_sources)
+                    value = value + "\n\n参考：\n"+('\n').join(output_sources)
+
+                value = value + bing
+                yield value + footer
+            except Exception as e:
+                error = str(e)
+                print("错误", settings.red, error, settings.white)
+                response = ''
+                # raise e
+            torch.cuda.empty_cache()
+        if response == '':
+            yield "发生错误，正在重新加载模型"+error+'///'
+            os._exit(0)
+        if Logging:
+            with session_maker() as session:
+                jl = 记录(时间=datetime.datetime.now(), IP=IP, 问=prompt, 答=response)
+                session.add(jl)
+                session.commit()
+        print(response)
+    else:
+        yield "知识库没结果" + footer
     yield "/././"
 
 
