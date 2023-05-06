@@ -1,0 +1,1 @@
+{"wId": "af98fa6a-c9c4-4d5a-ba64-3923bfbb08c3", "qrCodeUrl": "http://wxapii.oos-sccd.ctyunapi.cn/20230505/cb886589-c0ba-4a32-bb80-d07fe5b1c40b_qrcode.png?AWSAccessKeyId=9e882e7187c38b431303&Expires=1683880867&Signature=AJGBHNgISbNuhpJqQTyY%2FWnHdJk%3D"}

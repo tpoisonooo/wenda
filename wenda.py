@@ -8,6 +8,9 @@ import bottle
 import argparse
 import re
 
+from loguru import logger
+import xml.etree.ElementTree as ET
+
 parser = argparse.ArgumentParser(description='Wenda config')
 parser.add_argument('-c', type=str, dest="Config", default='config.xml', help="配置文件")
 parser.add_argument('-p', type=int, dest="Port", help="使用端口号")
@@ -200,28 +203,39 @@ def api_chat_box():
         os._exit(0)
 
 
+def real_url(href):
+    import requests
+    response = requests.get(url=href)
+    return response.url
+
+
 def search_bing(search_query,step = 0):
     import requests
     import re
     search_query = search_query.strip()
-    url = 'http://www.bing.com/search?q={}'.format(search_query)
+    # url = 'http://www.bing.com/search?q={}'.format(search_query)
+    url = 'https://www.bing.com/search?form=QBRE&q={}'.format(search_query)
     
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36 Edg/94.0.992.31'}
-    
+        "User-Agent":
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.19582"
+    }
     with requests.Session() as session:
         res = session.get(url, headers=headers)
 
     from bs4 import BeautifulSoup as BS
     soup = BS(res.text, 'html.parser')
+
     td = soup.findAll("h2")
     items = []
     for t in td:
         a = t.find_all('a')[0]
 
         href = a.get('href')
+        href = real_url(href)
         text = a.text
-        item = '* [{}]({})'.format(text, href)
+        # item = '* [{}]({})'.format(text, href)
+        item = '* {}'.format(text)
         items.append(item)
 
         if len(items) >= 2:
@@ -231,6 +245,7 @@ def search_bing(search_query,step = 0):
     if len(items) > 0:
         ret = '\n\n更多：\n' + '\n'.join(items)
     return ret
+
 
 
 @route('/api/chat_stream', method=("POST","OPTIONS"))
@@ -265,7 +280,12 @@ def api_chat_stream():
     error = ""
     footer = '///'
 
-    bing = search_bing(prompt)
+    bing = ''
+    try:
+        bing = search_bing(prompt)
+    except:
+        pass
+
     if use_zhishiku:
         # print(keyword)
         response_d = zhishiku.find(keyword,int(settings.library.Step))
@@ -310,6 +330,194 @@ def api_chat_stream():
         yield "知识库没结果" + footer
     yield "/././"
 
+
+def getResponse(title, prompt):
+    max_length = 2048
+    top_p = 0.7
+    temperature = 0.9
+    use_zhishiku = True
+    keyword = prompt
+
+    history = None
+    history_formatted = LLM.chat_init(history)
+    response = ''
+    error = ""
+
+    bing = search_bing(prompt)
+    if use_zhishiku:
+        # print(keyword)
+        response_d = zhishiku.find(keyword,int(settings.library.Step))
+        output_sources = [i['title'] for i in response_d]
+        results = '\n'.join([str(i+1)+". "+re.sub('\n\n', '\n', response_d[i]['content']) for i in range(len(response_d))])
+        if len(results) > 1536:
+            results = '\n'.join([str(i+1)+". "+re.sub('\n\n', '\n', response_d[i]['content']) for i in range(1)])
+
+        if len(results) > 1536:
+            results = results[0:1536]
+        prompt = 'system: 请扮演一名程序员，根据以下内容回答问题：'+prompt + "\n"+ results
+        # if bool(settings.library.Show_Soucre == 'True'):
+        #     footer = "\n### 来源：\n"+('\n').join(output_sources)+'///'
+    
+    if len(output_sources) > 0:
+        with mutex:
+            try:
+                val = None
+                for response in LLM.chat_one(prompt, history_formatted, max_length, top_p, temperature, zhishiku=use_zhishiku):
+                    if (response):
+                        value = response
+                if bool(settings.library.Show_Soucre == 'True'):
+                    # value = value + "\n###来源：\n"+('\n').join(output_sources)
+                    value = value + "\n\n参考：\n"+('\n').join(output_sources)
+
+                value = value + bing
+                return value
+
+            except Exception as e:
+                error = str(e)
+                print("错误", settings.red, error, settings.white)
+                response = ''
+                # raise e
+            torch.cuda.empty_cache()
+        if response == '':
+            return "发生错误，"+error
+        if Logging:
+            with session_maker() as session:
+                jl = 记录(时间=datetime.datetime.now(), IP=IP, 问=prompt, 答=response)
+                session.add(jl)
+                session.commit()
+        print(response)
+    else:
+        return "知识库没结果"
+
+
+@route('/api/test', method=("GET","OPTIONS"))
+def api_wx_test():
+    yield '{}'
+
+
+@route('/api/callback', method=("POST","OPTIONS"))
+def api_wx_callback():
+
+    def parseXML(xmlstr):
+
+        tag = '<?xml'
+        index = xmlstr.find(tag)
+
+        fromuser = xmlstr[0:index].split(':')[0]
+        xmlstr = xmlstr[index:]
+        content = None
+        try:
+            root = ET.fromstring(xmlstr)
+            content = root.find('appmsg/refermsg/content').text
+            title = root.find('appmsg/title').text
+            # fromuser = root.find('appmsg/refermsg/fromusr').text
+        except:
+            return None, None, None
+        return fromuser, content, title
+
+
+    def send(wid, group, content, title):
+        import requests
+        with open('send.txt', 'a') as f:
+            jsonstr = json.dumps({"wid": wid, 'group': group, 'content': content, 'title': title}, indent=2)
+            jsonstr = jsonstr.encode('utf8').decode('unicode_escape')
+            f.write(jsonstr)
+            f.write('\n')
+
+        auth = ''
+        with open('auth.txt') as f:
+            auth = f.read()
+
+        headers = {
+        "Content-Type": "application/json",
+        "Authorization": auth
+        }
+        data = {
+            "wId": wid,
+            "wcId": group,
+            "content": content
+        }
+
+        resp = requests.post('http://114.107.252.79:9899/sendText', data=json.dumps(data), headers = headers)
+        print(resp, resp.content)
+        if resp.status_code == 200:
+            return True
+        else:
+            return False
+
+    def ok():
+        yield '{}'
+
+
+    mywxid = None
+    try:
+        with open('me.txt') as f:
+            me = json.load(f)
+            if me is not None:
+                mywxid = me['wcId']
+                print('I am {}'.format(mywxid))
+    except:
+        pass
+    if mywxid is None:
+        mywxid = 'wxid_39qg5wnae8dl12'
+
+    allowCROS()
+   
+    x = request.json
+    if x is None:
+        print('request.json is None')
+        return ok()
+
+    messageType = str(x['messageType'])
+
+    if messageType != '80001' and messageType != '80014' and messageType != '9' and messageType != '14':
+        print('message Type {}  {}'.format(messageType, x))
+        return ok()
+
+
+    data = x['data']
+    if data['self']:
+        return ok()
+
+    # with open('history.txt', 'a') as f:
+    #     jsonstr = json.dumps(x, indent=2)
+    #     jsonstr = jsonstr.encode('utf8').decode('unicode_escape')
+    #     f.write(jsonstr)
+    #     f.write('\n')
+
+    # 瓜球
+    whitelist = ['wxid_raxq4pq3emg212', 'wxid_nl9mlgj0juta21', 'wxid_6jgswnur19fq22']
+
+    if messageType == '80014' or messageType == '14':
+        target = data['toUser']
+        if target == mywxid:
+            wid = data['wId']
+            group = data['fromGroup']
+            title = ''
+            content = data['content']
+            fromuser, content, title = parseXML(content)
+            if fromuser in whitelist and content is not None and '@茴香豆' in title:
+
+                resp = getResponse(title, content)
+                send(wid, group, resp, title)
+            else:
+                logger.debug('fromuser {} say {} banned'.format(fromuser, content))
+    elif messageType == '80001' or messageType == '9':
+        fromuser = data['fromUser']
+        wid = data['wId']
+        content = data['content']
+        group = data['fromGroup']
+        title = ''
+
+        if fromuser in whitelist and content.startswith("@茴香豆"):
+            content = content[4:]
+            resp = getResponse(title, content)
+            send(wid, group, resp, title)
+        elif group == '18356748488@chatroom' or group == '18356748488@chatroom':
+            if "@茴香豆" in content:
+                content = content[4:]
+                resp = getResponse(title, content)
+                send(wid, group, resp, title)
 
 model = None
 tokenizer = None

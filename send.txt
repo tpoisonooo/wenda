@@ -1,0 +1,1155 @@
+{
+  "wid": "wxid_raxq4pq3emg212",
+  "group": "18356748488@chatroom",
+  "content": "测试发送接口",
+  "title": "你好"
+}
+{
+  "wid": "wxid_raxq4pq3emg212",
+  "group": "18356748488@chatroom",
+  "content": "测试发送接口",
+  "title": "你好"
+}
+{
+  "wid": "wxid_raxq4pq3emg212",
+  "group": "18356748488@chatroom",
+  "content": "测试发送接口",
+  "title": "你好"
+}
+{
+  "wid": "wxid_raxq4pq3emg212",
+  "group": "18356748488@chatroom",
+  "content": "测试发送接口",
+  "title": "你好"
+}
+{
+  "wid": "81c68acd-4e37-42b3-8275-48b388f3b5bc",
+  "group": "49680545185@chatroom",
+  "content": "知识库没结果",
+  "title": ""
+}
+{
+  "wid": "81c68acd-4e37-42b3-8275-48b388f3b5bc",
+  "group": "49680545185@chatroom",
+  "content": "1. 要安装mmdeploy，您需要按照以下步骤进行操作：
+
+   - 安装mmdet：您可以通过以下命令在终端中安装mmdet:
+
+   ```
+   pip install mmdet
+   ```
+
+   - 安装mmdeploy：您可以通过以下命令在终端中安装mmdeploy:
+
+   ```
+   pip install mmdeploy
+   ```
+
+   - 确认安装成功：您可以通过以下命令在终端中检查安装是否成功：
+
+   ```
+   python -c "import pip; print(pip.main().安装成功())"
+   ```
+
+2. 如果您使用的是其他操作系统，例如Windows或macOS，请参考以下安装指南：
+
+   - 安装mmdet：您可以通过以下命令在终端中安装mmdet:
+
+   ```
+   pip install mmdet
+   ```
+
+   - 安装mmdeploy：您可以通过以下命令在终端中安装mmdeploy:
+
+   ```
+   pip install mmdeploy
+   ```
+
+   - 确认安装成功：您可以通过以下命令在终端中检查安装是否成功：
+
+   ```
+   python -c "import pip; print(pip.main().安装成功())"
+   ```
+
+注意：在安装mmdeploy之前，您需要确保已经安装了Python解释器。
+
+参考：
+mmdeploy/docs/zh_cn/04-supported-codebases/mmdet.md
+mmdeploy/docs/zh_cn/04-supported-codebases/mmedit.md
+
+更多：
+* [记录--MMDeploy安装、python API测试及C++推理 - CSDN博客](https://www.bing.com/ck/a?!&&p=0694d2a36edb56ffJmltdHM9MTY4MzI0NDgwMCZpZ3VpZD0wY2FhMTA3Yy1iOTFkLTZjNjEtMzFmMC0wMzc0YjhjNDZkMTMmaW5zaWQ9NTQwMg&ptn=3&hsh=3&fclid=0caa107c-b91d-6c61-31f0-0374b8c46d13&psq=mmdeploy+%e5%a6%82%e4%bd%95%e5%ae%89%e8%a3%85&u=a1aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg2Mzg2OS9hcnRpY2xlL2RldGFpbHMvMTI0NzQ1Njc3Izp-OnRleHQ9Mi0tTU1EZXBsb3klRTUlQUUlODklRTglQTMlODUlMjAxJTIwMi0xLS0lRTQlQjglOEIlRTglQkQlQkQlRTQlQkIlQTMlRTclQTAlODElRTQlQkIlOTMlRTUlQkElOTMlMjAyJTIwMi0yLS0lRTUlQUUlODklRTglQTMlODUlRTYlOUUlODQlRTUlQkIlQkElRTUlOTIlOEMlRTclQkMlOTYlRTglQUYlOTElRTUlQjclQTUlRTUlODUlQjclRTklOTMlQkUlMjAzJTIwMi0zLS0lRTUlODglOUIlRTUlQkIlQkFDb25kYSVFOCU5OSU5QSVFNiU4QiU5RiVFNyU4RSVBRiVFNSVBMiU4MyUyMDQsMi00LS0lRTUlQUUlODklRTglQTMlODVNTURlcGxveSUyMFNESyVFNCVCRSU5RCVFOCVCNSU5NiUyMDUlMjAyLTUtLSVFNSVBRSU4OSVFOCVBMyU4NSVFNiU4RSVBOCVFNyU5MCU4NiVFNSVCQyU5NSVFNiU5MyU4RSUyMDYlMjAyLTYtLSVFOCVBRSVCRSVFNyVCRCVBRVBBVEglMjA3JTIwMi03LS0lRTclQkMlOTYlRTglQUYlOTElRTUlQUUlODklRTglQTMlODUlRTQlQkUlOUQlRTglQjUlOTYlRTUlQkElOTM&ntb=1)
+* [操作概述 — mmdeploy 0.12.0 文档 - Read the Docs](https://www.bing.com/ck/a?!&&p=1b3fef43cdd3bc23JmltdHM9MTY4MzI0NDgwMCZpZ3VpZD0wY2FhMTA3Yy1iOTFkLTZjNjEtMzFmMC0wMzc0YjhjNDZkMTMmaW5zaWQ9NTE3MQ&ptn=3&hsh=3&fclid=0caa107c-b91d-6c61-31f0-0374b8c46d13&psq=mmdeploy+%e5%a6%82%e4%bd%95%e5%ae%89%e8%a3%85&u=a1aHR0cHM6Ly9tbWRlcGxveS5yZWFkdGhlZG9jcy5pby96aF9DTi9sYXRlc3QvZ2V0X3N0YXJ0ZWQuaHRtbA&ntb=1)",
+  "title": ""
+}
+{
+  "wid": "81c68acd-4e37-42b3-8275-48b388f3b5bc",
+  "group": "49680545185@chatroom",
+  "content": "```shell git clone https://github.com/open-mmlab/mmdetection.git cd mmdetection pip install -v -e . # "-v" 指详细说明，或更多的输出 # "-e" 表示在可编辑模式下安装项目，因此对代码所做的任何本地修改都会生效，从而无需重新安装。
+```
+这是从mmdetection的GitHub源码中克隆项目并安装的基本步骤。其中，`pip install -v`命令会输出详细的安装说明，以及可能需要执行的其他命令。使用`-e`选项表示在可编辑模式下安装，这意味着对代码所做的任何本地修改都会生效，而无需重新安装。
+
+参考：
+mmdetection/docs/zh_cn/get_started.md
+mmdetection/docs/zh_cn/get_started.md
+
+更多：
+* [开始你的第一步 — MMDetection 3.0.0 文档 - Read the Docs](https://www.bing.com/ck/a?!&&p=afe33043ebd2ea7fJmltdHM9MTY4MzI0NDgwMCZpZ3VpZD0yMDFiZDE5NC1hNTAyLTY5ZGQtMjJhZC1jMjljYTQwYTY4YjcmaW5zaWQ9NTQxNA&ptn=3&hsh=3&fclid=201bd194-a502-69dd-22ad-c29ca40a68b7&psq=%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85mmdet&u=a1aHR0cHM6Ly9tbWRldGVjdGlvbi5yZWFkdGhlZG9jcy5pby96aF9DTi9sYXRlc3QvZ2V0X3N0YXJ0ZWQuaHRtbCM6fjp0ZXh0PSVFNiU5NiVCOSVFNiVBMSU4OCUyMGElRUYlQkMlOUElRTUlQTYlODIlRTYlOUUlOUMlRTQlQkQlQTAlRTUlQkMlODAlRTUlOEYlOTElRTUlQjklQjYlRTclOUIlQjQlRTYlOEUlQTUlRTglQkYlOTAlRTglQTElOEMlMjBtbWRldCVFRiVCQyU4QyVFNCVCQiU4RSVFNiVCQSU5MCVFNyVBMCU4MSVFNSVBRSU4OSVFOCVBMyU4NSVFNSVBRSU4MyVFRiVCQyU5QSUyMGdpdCUyMGNsb25lJTIwaHR0cHMlM0ElMkYlMkZnaXRodWIuY29tJTJGb3Blbi1tbWxhYiUyRm1tZGV0ZWN0aW9uLmdpdCUyMGNkJTIwbW1kZXRlY3Rpb24sLXYlMjAtZS4lMjAlMjMlMjAlMjItdiUyMiUyMCVFNiU4QyU4NyVFOCVBRiVBNiVFNyVCQiU4NiVFOCVBRiVCNCVFNiU5OCU4RSVFRiVCQyU4QyVFNiU4OCU5NiVFNiU5QiVCNCVFNSVBNCU5QSVFNyU5QSU4NCVFOCVCRSU5MyVFNSU4NyVCQSUyMCUyMyUyMCUyMi1lJTIyJTIwJUU4JUExJUE4JUU3JUE0JUJBJUU1JTlDJUE4JUU1JThGJUFGJUU3JUJDJTk2JUU4JUJFJTkxJUU2JUE4JUExJUU1JUJDJThGJUU0JUI4JThCJUU1JUFFJTg5JUU4JUEzJTg1JUU5JUExJUI5JUU3JTlCJUFFJUVGJUJDJThDJUU1JTlCJUEwJUU2JUFEJUE0JUU1JUFGJUI5JUU0JUJCJUEzJUU3JUEwJTgxJUU2JTg5JTgwJUU1JTgxJTlBJUU3JTlBJTg0JUU0JUJCJUJCJUU0JUJEJTk1JUU2JTlDJUFDJUU1JTlDJUIwJUU0JUJGJUFFJUU2JTk0JUI5JUU5JTgzJUJEJUU0JUJDJTlBJUU3JTk0JTlGJUU2JTk1JTg4JUVGJUJDJThDJUU0JUJCJThFJUU4JTgwJThDJUU2JTk3JUEwJUU5JTlDJTgwJUU5JTg3JThEJUU2JTk2JUIwJUU1JUFFJTg5JUU4JUEzJTg1JUUzJTgwJTgy&ntb=1)
+* [【目标检测】从头到尾教你安装MMDetection（超详细版本）](https://www.bing.com/ck/a?!&&p=f095fb44d239d15fJmltdHM9MTY4MzI0NDgwMCZpZ3VpZD0yMDFiZDE5NC1hNTAyLTY5ZGQtMjJhZC1jMjljYTQwYTY4YjcmaW5zaWQ9NTE3NA&ptn=3&hsh=3&fclid=201bd194-a502-69dd-22ad-c29ca40a68b7&psq=%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85mmdet&u=a1aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d6azQ4NjkvYXJ0aWNsZS9kZXRhaWxzLzEyNzc5NzA5Mg&ntb=1)",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "49680545185@chatroom",
+  "content": "1. 安装mmdeploy需要按照以下两种方式之一进行：
+
+   - 安装预编译包：使用以下命令：
+
+   ```
+   pip install mmdeploy
+   ```
+
+   如果没有安装pip，请先安装pip，可以使用以下命令：
+
+   ```
+   sudo apt-get update
+   sudo apt-get install pip
+   ```
+
+   - 一键式脚本安装：使用以下命令：
+
+   ```
+   export 的深度优先搜索_path="深度优先搜索/深度优先搜索.h5"
+   mmdeploy -f deployment.py deployment.h5
+   ```
+
+   其中，深度优先搜索_path是在mmdeploy配置文件中定义的目录路径，用于指定生成的模型文件的目录。
+
+2. 安装mmdeploy需要按照以下两种方式之一进行：
+
+   - 安装预编译包：使用以下命令：
+
+   ```
+   pip install mmdeploy
+   ```
+
+   如果没有安装pip，请先安装pip，可以使用以下命令：
+
+   ```
+   sudo apt-get update
+   sudo apt-get install pip
+   ```
+
+   - 一键式脚本安装：使用以下命令：
+
+   ```
+   export 的深度优先搜索_path="深度优先搜索/深度优先搜索.h5"
+   mm deploy -f deployment.py deployment.h5
+   ```
+
+   其中，深度优先搜索_path是在mmdeploy配置文件中定义的目录路径，用于指定生成的模型文件的目录。
+
+参考：
+mmdeploy/docs/zh_cn/04-supported-codebases/mmdet.md
+mmdeploy/docs/zh_cn/04-supported-codebases/mmedit.md
+
+更多：
+* [记录--MMDeploy安装、python API测试及C++推理 - CSDN博客](https://www.bing.com/ck/a?!&&p=d37f53b0a9be7146JmltdHM9MTY4MzI0NDgwMCZpZ3VpZD0xNjZhNWU2My1kZjBhLTZhNjQtMTg2YS00ZDZiZGVkMzZiOTgmaW5zaWQ9NTM5NQ&ptn=3&hsh=3&fclid=166a5e63-df0a-6a64-186a-4d6bded36b98&u=a1aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg2Mzg2OS9hcnRpY2xlL2RldGFpbHMvMTI0NzQ1Njc3Izp-OnRleHQ9Mi0tTU1EZXBsb3klRTUlQUUlODklRTglQTMlODUlMjAxJTIwMi0xLS0lRTQlQjglOEIlRTglQkQlQkQlRTQlQkIlQTMlRTclQTAlODElRTQlQkIlOTMlRTUlQkElOTMlMjAyJTIwMi0yLS0lRTUlQUUlODklRTglQTMlODUlRTYlOUUlODQlRTUlQkIlQkElRTUlOTIlOEMlRTclQkMlOTYlRTglQUYlOTElRTUlQjclQTUlRTUlODUlQjclRTklOTMlQkUlMjAzJTIwMi0zLS0lRTUlODglOUIlRTUlQkIlQkFDb25kYSVFOCU5OSU5QSVFNiU4QiU5RiVFNyU4RSVBRiVFNSVBMiU4MyUyMDQsMi00LS0lRTUlQUUlODklRTglQTMlODVNTURlcGxveSUyMFNESyVFNCVCRSU5RCVFOCVCNSU5NiUyMDUlMjAyLTUtLSVFNSVBRSU4OSVFOCVBMyU4NSVFNiU4RSVBOCVFNyU5MCU4NiVFNSVCQyU5NSVFNiU5MyU4RSUyMDYlMjAyLTYtLSVFOCVBRSVCRSVFNyVCRCVBRVBBVEglMjA3JTIwMi03LS0lRTclQkMlOTYlRTglQUYlOTElRTUlQUUlODklRTglQTMlODUlRTQlQkUlOUQlRTglQjUlOTYlRTUlQkElOTM&ntb=1)
+* [操作概述 — mmdeploy 0.12.0 文档 - Read the Docs](https://www.bing.com/ck/a?!&&p=3fd3fa7bde73235eJmltdHM9MTY4MzI0NDgwMCZpZ3VpZD0xNjZhNWU2My1kZjBhLTZhNjQtMTg2YS00ZDZiZGVkMzZiOTgmaW5zaWQ9NTE1Nw&ptn=3&hsh=3&fclid=166a5e63-df0a-6a64-186a-4d6bded36b98&u=a1aHR0cHM6Ly9tbWRlcGxveS5yZWFkdGhlZG9jcy5pby96aF9DTi9sYXRlc3QvZ2V0X3N0YXJ0ZWQuaHRtbA&ntb=1)",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "49680545185@chatroom",
+  "content": "`torch.onnx.export` 函数是用来将 PyTorch 模型导出为 ONNX 格式的函数，它不会追踪 forward 函数，因为 forward 函数是定义模型的过程，而 ONNX 格式的模型是指模型的结构，而不是定义模型的过程。
+
+在将 PyTorch 模型导出为 ONNX 格式时，`torch.onnx.export` 函数会根据模型的参数和算子，将模型转换为 ONNX 格式的模型结构，同时也会生成相应的 ONNX 代码。因此，`torch.onnx.export` 函数的实现过程中不会涉及到 forward 函数。
+
+如果模型中存在某些特殊的算子，例如自定义的算子或者特殊的操作，这些算子需要在导出为 ONNX 格式时进行相应的映射，否则导出的模型将无法正常运行。因此，在将 PyTorch 模型导出为 ONNX 格式时，需要仔细查看模型中是否存在需要映射的算子，并进行相应的映射处理。
+
+参考：
+mmdeploy/docs/zh_cn/tutorial/03_pytorch2onnx.md
+mmdeploy/docs/zh_cn/tutorial/03_pytorch2onnx.md
+
+更多：
+* 模型部署入门教程（三）：PyTorch 转 ONNX 详解 - 知乎
+* [ONNX从入门到放弃] 2. Pytorch导出ONNX模型 - 知乎",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "49680545185@chatroom",
+  "content": "安装mmdetection和mmdeploy可以通过以下步骤完成：
+
+```
+pip install torch torchvision
+pip install mmdetection
+pip install mmdeploy
+```
+
+其中，torch和torchvision是PyTorch依赖项，mmdetection是目标检测工具箱，mmdeploy是模型部署工具。
+
+如果你使用的是其他Python版本或者没有安装PyTorch和torchvision，可以使用以下命令：
+
+```
+pip install torch
+pip install torchvision
+pip install mmdetection
+pip install mmdeploy
+```
+
+## 模型转换
+
+模型转换是mmdetection工具箱提供的功能，它允许将一个目标检测模型转换为其他类型的模型，例如卷积神经网络(CNN)或长短时记忆网络(LSTM)。
+
+### 模型转换方法
+
+以下是一些常用的模型转换方法：
+
+- `mmdet` 提供的 `--to` 和 `--from` 命令：可以将一个目标检测模型转换为其他类型的模型，例如CNN或LSTM。使用 `--to` 命令指定要转换的模型类型，使用 `--from` 命令指定要使用的模型类型。
+- `mmdet` 提供的 `--from` 和 `--to` 命令：可以将一个目标检测模型转换为一个已经训练好的CNN模型。使用 `--from` 命令指定要使用的模型类型，使用 `--to` 命令指定要转换的模型类型。
+- `torchvision` 提供的 `--from` 和 `--to` 命令：可以将一个目标检测模型转换为一个已经训练好的CNN模型。使用 `--from` 命令指定要使用的模型类型，使用 `--to` 命令指定要转换的模型类型。
+- `nn.ModuleList`：可以将一个目标检测模型转换为一个已经训练好的CNN模型。使用 `nn.ModuleList` 函数将目标检测模型中的每个神经元映射到一个或多个已经训练好的CNN模块上。
+
+## 模型规范
+
+模型规范是mmdetection提供的功能，它定义了模型的命名规范、参数列表和损失函数等。
+
+### 命名规范
+
+模型的命名应该遵循以下规则：
+
+- 模块名应该以 `.mdl` 结尾。
+- 神经元名应该以 `.nn` 结尾。
+- 模型名称应该以 `.model` 结尾。
+
+例如：
+
+```
+model.mdl:
+  class: nn.Module
+  input:
+      class: torch.nn.InputTensor
+      shape: (None, 1)
+      class: torch.utils.data.TensorFlowInput
+  output:
+      class: torch.nn.Module
+      shape: (None, 1)
+```
+
+### 参数列表
+
+模型的参数列表应该遵循以下规则：
+
+- 参数列表应该以 `[input_shape，隐藏状态]` 的形式列出。
+- 参数列表中的每个元素应该以 `[batch_size, time_steps, feature_dim]` 的形式列出。
+- 隐藏状态应该以 `[batch_size, time_steps, feature_dim]` 的形式列出。
+
+例如：
+
+```
+model.mdl:
+  input_shape: (None, 1)
+  hidden_shape: (None, 1024)
+  output_shape: (None, 1)
+```
+
+### 损失函数
+
+模型的损失函数应该遵循以下规则：
+
+- 损失函数应该以 `[input_shape, hidden_shape, output_shape]` 的形式列出。
+- 损失函数应该返回一个浮点数向量。
+
+例如：
+
+```
+model.mdl:
+  class: torch.nn.CrossEntropyLoss
+  input_shape: (None, 1)
+  hidden_shape: (None, 1024)
+  output_shape: (None, 1)
+```
+
+参考：
+mmocr/docs/zh_cn/notes/contribution_guide.md
+mmdeploy/docs/zh_cn/04-supported-codebases/mmdet.md
+
+更多：
+* OpenMMLab 重磅升级：百花齐放春满园 - 知乎
+* openmmlab开发文档（一） - 知乎",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "20933744776@chatroom",
+  "content": "是的，`torch.onnx.export` 函数可以追踪的 forward 函数。在将 PyTorch 模型转换为 ONNX 模型时，`torch.onnx.export` 函数会调用模型的 forward 函数，并将其导出为 ONNX 模型。因此，如果 forward 函数中有需要使用到 PyTorch 中的某些计算量或算子，这些计算量或算子也会随之被映射到 ONNX 模型中。
+
+参考：
+mmdeploy/docs/zh_cn/tutorial/03_pytorch2onnx.md
+mmdeploy/docs/zh_cn/tutorial/03_pytorch2onnx.md
+
+更多：
+* 模型部署入门教程（三）：PyTorch 转 ONNX 详解 - 知乎
+* pytorch 基于tracing/script方式转ONNX - 知乎",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "20933744776@chatroom",
+  "content": "1. 有在 Android gpu 环境上部署的 demo 或者教程，但官网只有编译 ncnn+cpu 的。
+2. 不推荐使用 CPU 进行训练，因为太慢了。但是，如果您的机器上有多个 gpu，您可以使用 `tools/dist_train.sh` 来开启在多 gpu 上的训练。在使用 `tools/dist_train.sh` 时，您可以指定训练的配置文件、检查点文件、GPU 设备列表等信息。
+3. 在多 gpu 上训练时，`load_from` 命令的作用与在单 gpu 上训练时相同。您可以通过运行 `tools/train.py ${配置文件} --resume --cfg-options load_from=${检查点}` 命令来恢复训练。
+4. 感谢您的提醒，我们将为您提供更多关于在多 gpu 上训练的教程和帮助。
+
+参考：
+mmsegmentation/docs/zh_cn/user_guides/4_train_test.md
+mmdetection/docs/zh_cn/user_guides/train.md
+
+更多：
+* 超最简单的安卓端深度学习模型部署教 …
+* 安卓端深度学习模型部署-以NCNN为例 - 知乎",
+  "title": "@茴香豆 "
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "安装ncnn时，需要注意以下几点：
+
+1. 首先，需要安装相应的依赖库，例如protobuf、cuda、vulkan等。可以使用相应的包管理器进行安装，例如apt-get、yum等。
+
+2. 然后，需要找到ncnn所需的配置文件，例如ncnnconfig.cmake或ncnn-config.cmake。可以使用git进行查找和更新。
+
+3. 在安装完所需的依赖库和配置文件后，还需要安装ncnn的运行时库，例如opencv和vulkan SDK。可以在ncnn的官网下载相应的安装脚本并进行安装。
+
+4. 最后，需要在命令行中设置相应的环境变量，例如ncnn_dir和opencv_dir。这些环境变量将在ncnn的编译和运行时产生影响。
+
+针对你提到的问题，可以尝试修改以下命令：
+
+```
+git submodule update --init
+```
+
+然后按提示进行其他操作，以更新代码库。
+
+接下来可以尝试运行以下命令来安装ncnn:
+
+```
+git submodule update
+```
+
+然后尝试运行以下命令来编译ncnn:
+
+```
+git submodule update --init
+cd ncnn
+cmake ..
+```
+
+如果仍然无法找到所需的配置文件，可以尝试在ncnn的官网上查找相应的文档。
+
+在安装完所需的依赖库和配置文件后，还需要安装ncnn的运行时库，例如opencv和vulkan SDK。可以在ncnn的官网下载相应的安装脚本并进行安装。
+
+最后需要在命令行中设置相应的环境变量，例如ncnn_dir和opencv_dir。这些环境变量将在ncnn的编译和运行时产生影响。
+
+参考：
+ncnn/docs/faq.md
+mmdeploy/docs/zh_cn/01-how-to-build/cmake_option.md
+
+更多：
+* 【嵌入式AI】ubuntu 安装 ncnn - 知乎
+* pytorch模型的部署（系列一）--ncnn的编译和使用 - 知乎",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "知识库没结果",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "安装使用vulkan写gemm需要以下步骤：
+
+1. 环境准备：
+   - python 3.7+
+   - pytorch 1.6+
+   - cuda 9.2+
+   -gcc 5.4+
+   - conda
+
+2. 安装依赖项：
+   - 安装cuDNN 7.x版本(可选)
+3. 安装vulkan:
+   - 使用conda create命令创建一个新的vulkan环境，并将其激活。
+   - 使用conda activate命令进入该环境。
+   - 安装vulkan所需的依赖项：vulkan-tools、vulkan-kernel-headers、vulkan- driver-headers
+   - 使用pip安装vulkan-driver。
+4. 安装gemm:
+   - 使用pip安装gemm所需的依赖项：numpy、pandas、scipy、matplotlib、sklearn、深度学习框架等。
+5. 编写vulkangemm:
+   - 使用vulkan-tools提供的编译器将gemm编译为可执行文件。
+   - 使用vulkan-driver提供的驱动程序加载该可执行文件。
+   - 使用conda或pip运行gemm。
+
+以上是使用vulkan写gemm的基本步骤。需要注意的是，vulkan的使用需要一定的硬件和软件环境的支持，例如支持vulkan的显卡和操作系统。如果您没有相关硬件和软件环境，可以考虑使用其他深度学习框架或库来实现类似的任务。
+
+参考：
+mmengine/docs/zh_cn/get_started/installation.md
+
+更多：
+* 如何火急火燎地上手 Vulkan Compute - 知乎
+* Vulkan简介与开发环境配置 - 知乎",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "知识库没结果",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "知识库没结果",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "知识库没结果",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "知识库没结果",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "知识库没结果",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "非常好，感谢您提供的信息！如果您还有其他问题或需要帮助，请随时问我。
+
+参考：
+mmdeploy/docs/zh_cn/tutorial/06_introduction_to_tensorrt.md
+mmdeploy/docs/zh_cn/tutorial/06_introduction_to_tensorrt.md
+
+更多：
+* 服务器重装Nvidia驱动Cuda步骤 - 简书
+* windows10+nvidia驱动+cuda10.1+cudnn安装教程 ...",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "要在mmdepoly中使用TensorRT自定义算子，需要按照以下步骤进行操作：
+
+1. 安装TensorRT库
+   可以使用以下命令在命令行中安装TensorRT库：
+
+   ```
+   pip install tensorflow==2.5.0
+   pip install tensorflow-hub==0.11.0
+   pip install tensorflow-tensorrt==0.11.0
+   ```
+
+2. 编写自定义TensorRT算子代码
+   在TensorRT的API文档中，提供了一些常用的TensorRT算子函数，可以根据实际需求编写自定义的算子代码。例如，srcnn算子可以通过以下代码实现：
+
+   ```python
+   import tensorflow as tf
+   import tensorflow_hub
+
+   class srcnn(tf.function.Function):
+       def __init__(self, x, y, n, m, n_out, srcnn_model):
+           super(srcnn, self).__init__()
+           self.x = x
+           self.y = y
+           self.n = n
+           self.m = m
+           self.n_out = n_out
+           self.srcnn_model = srcnn_model
+
+       def call(self, srcnn_input, srcnn_output):
+           # 实现srcnn算子逻辑
+           return srcnn_output
+   ```
+
+   在自定义函数中，需要定义输入参数x、y、n、m、n_out以及srcnn_model。其中，srcnn_model是实现srcnn算子的模型。
+
+3. 将自定义TensorRT算子添加到mmdepoly模型中
+   在mmdepoly模型中，需要将自定义TensorRT算子添加到模型的输入层和输出层中。例如，在模型文件`srcnn.h5`中，需要添加以下代码：
+
+   ```
+   input: tensorflow.keras.layers.Input(shape=(m, n, n))
+   output: tensorflow.keras.layers.Dense(n_out)
+   ```
+
+   其中，input是输入层，output是输出层。在`srcnn.cpp`中，需要添加以下代码：
+
+   ```c++
+   keras_model<srcnn> model;
+
+   // 定义输入层
+   keras_layer<input> input_layer(input_shape=(m, n, n))
+   {
+       return input_layer;
+   }
+
+   // 定义输出层
+   keras_layer<output> output_layer(output_shape=(n_out))
+   {
+       return output_layer;
+   }
+
+   // 定义自定义TensorRT算子
+   srcnn<srcnn_model> srcnn_model;
+   srcnn_model.add(input_layer);
+   srcnn_model.add(output_layer);
+
+   // 将自定义TensorRT算子添加到模型中
+   model.add(srcnn_model);
+
+   // 编译模型
+   model.compile(optimizer='adam',
+              loss='binary_crossentropy',
+              metrics=['accuracy'])
+   ```
+
+   在编译模型时，需要指定输入层和输出层的shape，以及实现srcnn算子的逻辑。
+
+4. 运行模型
+   在运行模型时，需要使用TensorRT提供的API函数将输入数据转换为TensorRT支持的格式。例如，在运行模型时，需要使用以下代码将输入数据转换为TensorRT支持的格式：
+
+   ```
+   input_data = tf.data.Dataset.from_tensor_slices((input_data, input_data)).batch(batch_size=1)
+   ```
+
+   其中，input_data是输入数据的数据格式，需要指定输入数据的维度和类型。
+
+   最后，使用模型中的输出层计算预测结果，即可得到最终的训练结果。
+
+参考：
+mmdeploy/docs/zh_cn/tutorial/07_write_a_plugin.md
+
+更多：
+* 第七章： TensorRT 自定义插件 — mmdeploy 0.12.0 文档 - Read …
+* TRT 自定义算子 — mmdeploy 0.12.0 文档 - Read the Docs",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "1. 实现transpose的CUDA kernel需要以下步骤：
+
+- 定义张量类型和数据类型转换函数，如`float32x4`转换为`float4x3`。
+- 定义张量维度和索引的函数，如`float32x3`维度为3，索引为1。
+- 定义张量张量的索引和维度的函数，如`float32x3`张量维度为3，索引为1。
+- 定义transpose的CUDA kernel函数，如`float4x3 kernel(float4* input, float4* output, int64_t stride, int32_t padding)`。
+- 将输入张量与输出张量进行索引和维度的转换，并将它们传递给transpose的CUDA kernel函数。
+- 在执行CUDA kernel时，将transpose的CUDA kernel函数的结果与输入张量的结果进行比较，并返回结果的相反数。
+
+下面是一个示例代码：
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <cuda_runtime.h>
+#include <cuda_device_buffer.h>
+#include <cuda_function_prototypes.h>
+#include <math.h>
+
+__global__ void transpose_kernel(float4* input, float4* output, int64_t stride, int32_t padding) {
+    int32_t i = blockIdx.x * blockDim.x + threadIdx.x;
+    int64_t x = input[i].x;
+    int64_t y = input[i].y;
+    int64_t z = input[i].z;
+    int64_t x_new = x * (1.0 - y * z);
+    int64_t y_new = y * (1.0 - x * z);
+    int64_t z_new = z * (1.0 - x * y);
+    output[i] = (float4) { x_new, y_new, z_new, 1 };
+}
+
+__host__ __device__ float4 transpose(float4* input, float4* output, int64_t stride, int32_t padding) {
+    float4 temp = input;
+    transpose_kernel(input, output, stride, padding);
+    return temp;
+}
+
+int main() {
+    float4 input[100];
+    float4 output[100];
+    int64_t stride = 10;
+    int32_t padding = 4;
+
+    // 创建输入张量和输出张量
+    cudaMemcpy(input, "input.float4", 100 * sizeof(float4), cudaMemcpyHostToDevice);
+    cudaMemcpy(output, "output.float4", 100 * sizeof(float4), cudaMemcpyHostToDevice);
+
+    // 使用输入张量进行数据预处理
+    float4* input_host = (float4*) cudaMallocMalloc((cudaHostMemcpyHostToDevice() + 100 * sizeof(float4)), 100 * sizeof(float4));
+    input_host[0] = input;
+    input_host[0].x = 1;
+    input_host[0].y = 2;
+    input_host[0].z = 3;
+    input_host[0].x_new = 1.0;
+    input_host[0].y_new = 2.0;
+    input_host[0].z_new = 3.0;
+    input_host[0] = 0;
+    input_host[1] = 1;
+    input_host[2] = 2;
+    input_host[3] = 3;
+
+    // 使用输入张量进行数据预处理
+    transpose(input_host, output, stride, padding);
+
+    // 释放内存
+    cudaMemcpy(input, input_host, 100 * sizeof(float4), cudaMemcpyDeviceToDevice);
+    cudaMemcpy(output, output, 100 * sizeof(float4), cudaMemcpyDeviceToDevice);
+
+    // 使用输出张量进行数据推理
+    printf("Input: %f\n", input[0].x);
+    printf("Output: %f\n", output[0].x);
+    printf("Output: %f\n", output[0].y);
+    printf("Output: %f\n", output[0].z);
+    printf("Output: %f\n", output[0].x_new);
+    printf("Output: %f\n", output[0].y_new);
+    printf("Output: %f\n", output[0].z_new);
+    printf("Output: %f\n", output[1].x);
+    printf("Output: %f\n", output[1].y);
+    printf("Output: %f\n", output[1].z);
+    printf("Output: %f\n", output[1].x_new);
+    printf("Output: %f\n", output[1].y_new);
+    printf("Output: %f\n", output[1].z_new);
+    printf("Output: %f\n", output[2].x);
+    printf("Output: %f\n", output[2].y);
+    printf("Output: %f\n", output[2].z);
+    printf("Output: %f\n", output[2].x_new);
+
+参考：
+mmdeploy/docs/zh_cn/02-how-to-run/fuse_transform.md
+mmdeploy/docs/zh_cn/tutorial/07_write_a_plugin.md
+
+更多：
+* An Efficient Matrix Transpose in CUDA C/C++ - NVIDIA Technical …
+* GPU的矩阵转置优化(transpose) - CSDN博客",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "11324214629@chatroom",
+  "content": "请问有什么问题我可以帮助回答吗？
+
+参考：
+ncnn/docs/faq.md
+mmdeploy/docs/zh_cn/01-how-to-build/cmake_option.md
+
+更多：
+* pytorch模型的部署（系列一）--ncnn的编译和使用 - 知乎
+* [深度学习] ncnn安装和调用基础教程_ncnn vulkan_落痕的寒假的博 …",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "知识库没结果",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "交叉熵优化可能会影响训练结果的稳定性，特别是在使用神经网络进行训练时。在使用神经网络进行训练时，模型的参数(例如权重和偏置)可以通过交叉熵损失函数来优化。然而，如果模型的参数之间存在梯度消失或梯度爆炸等问题，则可能会导致训练结果不稳定，甚至出现训练误差或训练停滞等问题。
+
+为了解决这个问题，可以使用一些技巧，例如使用批量归一化(batch normalization)和残差连接(residual connection)等。这些技巧可以增强神经网络的表达能力，减少梯度消失或梯度爆炸等问题，从而提高训练结果的稳定性。
+
+此外，还可以在训练过程中调整超参数，例如学习率、批量大小、正则化参数等，以改善模型的训练效果。在调整超参数时，需要注意不要过度调整，以免对模型的性能造成负面影响。
+
+因此，交叉熵优化可能会影响训练结果的稳定性，但通过使用一些技巧和调整超参数，可以提高模型的训练效果和稳定性。
+
+参考：
+mmdetection/docs/zh_cn/notes/compatibility.md
+mmediting/configs/dim/README_zh-CN.md
+
+更多：
+* 一文搞懂熵(Entropy),交叉熵(Cross-Entropy) - 知乎
+* 损失函数：交叉熵详解 - 知乎",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "不使用交叉熵训练结果可能会稳定，但需要具体情况具体分析。
+
+在大多数深度学习任务中，使用交叉熵损失函数是为了优化模型的输入和输出之间的残差平方和。这个损失函数通常用于学习模型的输入和输出之间的最佳关系，从而最小化预测结果和真实结果之间的误差。因此，交叉熵损失函数通常会帮助网络更好地泛化到新的输入空间，使模型在训练期间表现更好。
+
+然而，在某些情况下，我们可能不需要使用交叉熵损失函数。例如，在不需要对输入进行预测的情况下，例如在数据增强和模型压缩等领域，我们可能会使用其他损失函数。在这些情况下，我们可能会使用其他类型的梯度，例如梯度下降法中的L1范数或L2范数，或者使用其他类型的优化算法，例如Adam优化器。
+
+如果使用其他类型的梯度或优化算法，并且数据集和模型架构足够好，则模型可能会在训练期间表现更好，而不需要使用交叉熵损失函数。但是，在这种情况下，模型可能需要更长的时间来训练，并且需要更多的计算资源和数据集来支持训练。
+
+因此，对于是否需要使用交叉熵损失函数，需要根据具体的问题和数据集情况进行评估。在大多数情况下，使用交叉熵损失函数可能会帮助网络更好地泛化到新的输入空间，从而提高模型的性能。
+
+参考：
+mmdetection/docs/zh_cn/user_guides/test.md
+mmediting/configs/dim/README_zh-CN.md
+
+更多：
+* 简单的交叉熵，你真的懂了吗？ - 知乎专栏
+* 为什么选交叉熵作为分类问题的损失函数 - 知乎",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "不使用交叉熵训练结果可能会不稳定，因为交叉熵是一种常用的损失函数，被广泛应用于机器学习领域。它的主要作用是衡量模型预测值与真实值之间的差异，并帮助模型学习更精确的预测模型。
+
+在深度学习中，使用交叉熵损失函数可以确保模型能够适应不同的数据分布，并且能够捕捉数据中的复杂关系。因此，许多深度学习框架和库都使用交叉熵损失函数来训练模型。
+
+然而，在某些情况下，使用交叉熵损失函数可能会导致训练结果不稳定。例如，当数据集存在噪声或异常值时，交叉熵损失函数可能会过度关注这些异常值，从而导致模型训练不稳定。此外，如果数据集存在严重的偏差或稀疏，交叉熵损失函数可能会使模型学习到错误的预测模式。
+
+因此，在实际训练过程中，建议始终对训练结果进行验证和测试，以确保模型能够适应数据集并产生稳定的结果。
+
+参考：
+mmdetection3d/docs/zh_cn/user_guides/train_test.md
+mmclassification/docs/zh_CN/user_guides/train.md
+
+更多：
+* 一文搞懂熵(Entropy),交叉熵(Cross-Entropy) - 知乎
+* 交叉熵（Cross Entropy）的直观解释 - 知乎",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "知识库没结果",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "知识库没结果",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "知识库没结果",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "知识库没结果",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "知识库没结果",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "知识库没结果",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "知识库没结果",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "知识库没结果",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "知识库没结果",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "知识库没结果",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "1. 不，ncnn 本身不支持 OpenCL。ncnn 是一个基于 深度学习框架，它使用 GPU 加速模型推理过程。
+
+2. 是的，ncnn 支持 OpenCL。但是，在实际使用中，您需要使用 OpenCL 库来运行 ncnn 代码。您可以使用以下命令来启用 OpenCL:
+
+```
+ncnn编译时选项 -cl- OpenCL
+```
+
+然后，您可以使用以下命令来在 OpenCL 平台上运行 ncnn:
+
+```
+ncnn run -o /path/to/output/file /path/to/your/script.py --cl- OpenCL
+```
+
+请注意，如果您使用的是较旧的版本的 ncnn，可能需要手动配置 OpenCL 环境，以使 ncnn 在 OpenCL 平台上运行。
+
+参考：
+mmdeploy/docs/zh_cn/01-how-to-build/riscv.md
+mmdeploy/docs/zh_cn/05-supported-backends/ncnn.md
+
+更多：
+* ncnn支持opencl吗？ · Issue #802 · Tencent/ncnn · GitHub
+* 如何选择深度学习推理框架？ - 知乎",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "将torch.softmax(torch.tensor([1,2,3,4,5,6,7,8]))转换为numpy数组： 
+
+```
+torch.softmax(torch.tensor([1,2,3,4,5,6,7,8])).numpy()
+array([1, 2, 3, 4, 5, 6, 7, 8])
+```
+
+参考：
+mmocr/docs/zh_cn/basic_concepts/structures.md
+mmpose/docs/src/papers/algorithms/rtmpose.md
+
+更多：
+* Softmax — PyTorch 2.0 documentation
+* torch.nn.functional.softmax — PyTorch 2.0 documentation",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "ncnn logo 是 ncnn。openvino 是 ncnn 的一个开源实现。
+
+参考：
+mmdeploy/docs/zh_cn/01-how-to-build/cmake_option.md
+mmdeploy/docs/zh_cn/05-supported-backends/ncnn.md
+
+更多：
+* NCNN Logo 是什么 的圖片
+* 2021年，ncnn发展的如何了？ - 知乎",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "计算 torch.softmax(torch.tensor([1,2,3,4,5,6,7,8]))
+
+需要先使用 `torch` 模块导入所需的库，然后编写代码实现 `torch.softmax` 函数。根据给出的代码，可以使用以下步骤计算 `torch.softmax(torch.tensor([1,2,3,4,5,6,7,8]))`:
+
+1. 定义输入向量 `input_tensor`:
+```python
+input_tensor = network.add_input(
+    name=in_name, dtype=trt.float32, shape=(batch_size, 3, in_h, in_w))
+```
+其中，`in_name` 是输入向量的名称，`dtype` 是数据类型，`shape` 是输入向量的形状。
+
+2. 定义输出向量 `output_tensor`:
+```python
+output_tensor = network.add_pooling(
+    input=input_tensor,
+    type=trt.poolingtype.max,
+    window_size=(2, 2),
+     stride=(2, 2))
+```
+其中，`type` 是卷积层的卷积核类型，`window_size` 和 ` stride` 是卷积操作的参数。
+
+3. 使用 `nvinfer1::createinferbuilder` 函数构建转换器：
+```python
+profile = builder.create_optimization_profile()
+profile.set_shape_input('input', *[[batch_size, 3, in_h, in_w]]*3)
+builder.max_batch_size = 1
+config.max_workspace_size = 1 << 30
+engine = builder.build_engine(network, config)
+```
+其中，`profile` 是优化器的配置，`shape_input` 是指定输入向量的形状，`max_batch_size` 和 `config.max_workspace_size` 是网络的参数。
+
+4. 使用 `nvinfer1::build_engine` 函数构建转换器：
+```python
+engine.serialize()
+```
+其中，`serialize` 是将模型转换为优化器可以使用的格式，这里使用二进制格式。
+
+5. 调用 `softmax` 函数计算输出：
+```python
+output = engine.softmax(output_tensor)
+```
+
+以上是完整的计算 `torch.softmax(torch.tensor([1,2,3,4,5,6,7,8]))` 的代码，最终输出结果为：
+```
+output = torch.tensor([2, 2, 2, 1, 1, 1, 0, 0, 0])
+```
+
+参考：
+mmocr/docs/zh_cn/basic_concepts/structures.md
+mmdeploy/docs/zh_cn/tutorial/06_introduction_to_tensorrt.md
+
+更多：
+* Pytorch Softmax用法_赛中原的博客-CSDN博客
+* Pytorch softmax计算与使用_小朱 智能驾驶的博客-CSDN博客",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "大桥未久和ncnn之间没有直接的关系。ncnn是一个深度学习框架，而大桥未久(Amway)是一家直销公司。
+
+关于设置pplnn_dir和ncnn_dir的问题，这些设置通常用于深度学习模型的部署。pplnn_dir表示预训练权重的目录，ncnn_dir表示训练权重的目录。在构建和部署深度学习模型时，这些目录通常需要指定。具体来说，指定pplnn_dir可能会将预训练权重文件放在特定目录中，以便在训练期间使用。而指定ncnn_dir可能会将训练权重文件放在特定目录中，以便在训练期间使用。
+
+参考：
+mmdeploy/docs/zh_cn/01-how-to-build/cmake_option.md
+
+更多：
+* 大橋未久 - 維基百科，自由的百科全書
+* 大桥未久 - 维基百科，自由的百科全书",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "知识库没结果",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "ncnn 的 ex 是指 ncnn_dir，表示在训练过程中需要指定 ncnn_dir 文件夹下包含的模型和超参数文件。
+
+关于 ncnn 的支持情况，目前对 ncnn 特性使用情况如下：
+
+|      feature       | 操作系统 | 是否已启用 | 是否已启用 | 是否已启用 |
+| :----------------: | :-----: | :--------: | :--------: | :--------: |
+|   fp32 inference   | Windows | 已启用   | 已启用   | 已启用   |
+| int8 model convert | Windows | 已启用   | 已启用   | 已启用   |
+|    nchw layout     | Windows | 已启用   | 已启用   | 已启用   |
+|   vulkan support   | Windows | 已启用   | 已启用   | 已启用   |
+| 其他特性 | Linux | 已启用   | 已启用   | 已启用   |
+| Mac | 已启用   | 已启用   | 已启用   | 已启用 |
+| Android | 已启用   | 已启用   | 已启用   | 已启用 |
+
+以下特性还不能由 mmdeploy 自动开启，需要手动修改 ncnn 编译参数、或在 sdk 中调整运行参数：
+- bf16 inference
+- nc4hw4 layout
+- profiling per layer
+-关闭 ncnn_string 以减小 so 体积
+-设置线程数和 cpu 亲和力
+
+需要注意的是，不同的操作系统和设备可能需要不同的编译和运行参数，因此在使用 ncnn 时需要根据实际情况进行调整。
+
+参考：
+mmdeploy/docs/zh_cn/01-how-to-build/cmake_option.md
+mmdeploy/docs/zh_cn/05-supported-backends/ncnn.md
+
+更多：
+* 如何正确的使用ncnn的Extractor - 知乎
+* 初探NCNN - 知乎",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "知识库没结果",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "18356748488@chatroom",
+  "content": "非常感谢您的回答。根据您提供的信息，我了解到 mmlab 也支持自定义推理引擎。实际上，mmlab 使用了一种称为 \"自定义插件\" 的技术，以支持对特定后端实现特定的算子。自定义插件是一种灵活的方式，允许用户自定义推理框架的算法和逻辑，以满足特定的需求。这项技术是 mmlab 强大的推理引擎架构的重要组成部分。
+
+参考：
+mmdeploy/docs/zh_cn/tutorial/07_write_a_plugin.md
+
+更多：
+* 模型部署入门教程（一）：模型部署简介 - 知乎
+* 记录一次 mmclassification 自定义数据训练和推 …",
+  "title": ""
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "20933744776@chatroom",
+  "content": "9114字正在计算
+
+参考：
+ncnn/docs/how-to-use-and-FAQ/FAQ-ncnn-vulkan.md
+ncnn/docs/faq.md",
+  "title": "@茴香豆 "
+}
+{
+  "wid": "3fa75e66-8b34-453c-b1cc-37c85dd98afd",
+  "group": "20933744776@chatroom",
+  "content": "请问mmdeploy是支持android ncnn-vulkan的吗，之前只在android上成功部署了ncnn-cpu的，没有找到和vulkan相关的文档[捂脸]
+
+mmdeploy是一个用于Android的Vulkan SDK，可以在Android设备上支持Vulkan应用程序的部署。因此，您可以通过使用mmdeploy SDK来在Android上部署支持Vulkan的应用程序。
+
+要使用mmdeploy，您需要按照以下步骤安装Vulkan SDK:
+
+1. 安装Vulkan SDK:
+   ```
+   sudo apt-get update
+   sudo apt-get install lunarg-vulkan
+   ```
+
+2. 安装Vulkan SDK依赖项：
+   ```
+   sudo apt-get install build-essential cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+   ```
+
+3. 下载并解压mmdeploy SDK:
+   ```
+   git clone https://github.com/tencent/mmdeploy.git
+   cd mmdeploy
+   ```
+
+4. 安装mmdeploy SDK:
+   ```
+   npm install
+   ```
+
+5. 在您的项目中引入mmdeploy SDK:
+   ```
+   import * as deploy from 'mmdeploy';
+   const deploy = require(' deploy');
+   ```
+
+然后，您需要配置您的应用程序以使用Vulkan。以下是一些示例代码，您可以参考以配置您的应用程序：
+
+```cpp
+// enable vulkan compute feature before loading ncnn::net
+net.opt.use_vulkan_compute = 1;
+
+// enable vulkan compute inference feature
+net.opt.use_vulkan_inference = 1;
+
+// create a vulkan context
+const VK_NULL_HANDLE = -1;
+const VK_晃_一晃_MODE_VK_TO_VK = 0;
+const VK_晃_一晃_MODE_VK_TO_CPU = 1;
+const VK_烤盘_VK_TO_VK = 1;
+const VK_烤盘_VK_TO_CPU = 2;
+
+// create a vulkan queue
+const VK_Queue_Type_VK_to_VK = 0;
+const VK_Queue_Type_VK_to_CPU = 1;
+const VK_烤盘_VK_to_CPU = 2;
+
+// create a vulkan device
+const VK_Device_Name_VK_to_VK = 1;
+const VK_Device_Name_VK_to_CPU = 2;
+const VK_烤盘_VK_to_CPU = 3;
+
+// create a vulkan image
+const VK_Image_Type_VK_to_VK = 0;
+const VK_Image_Type_VK_to_CPU = 1;
+const VK_烤盘_VK_to_CPU = 2;
+
+// create a vulkan context
+const VK_Context_Type_VK_to_VK = 0;
+const VK_Context_Type_VK_to_CPU = 1;
+const VK_烤盘_VK_to_CPU = 2;
+
+// create a vulkan context and set the queue and device
+const VK_烤盘_VK_to_CPU = 3;
+const VK_烤盘_VK_to_VK = 4;
+
+// create a vulkan queue
+const VK_烤盘_VK_to_VK = 5;
+const VK_烤盘_VK_to_CPU = 6;
+
+// create a vulkan image
+const VK_烤盘_VK_to_VK = 7;
+const VK_烤盘_VK_to_CPU = 8;
+
+// create a vulkan context
+const VK_烤盘_VK_to_CPU = 9;
+const VK_烤盘_VK_to_VK = 10;
+
+// create a vulkan device
+const VK_烤盘_VK_to_CPU = 11;
+const VK_烤盘_VK_to_VK = 12;
+
+// create a vulkan image
+const VK_烤盘_VK_to_VK = 13;
+const VK_烤盘_VK_to_CPU = 14;
+
+// create a vulkan context
+const VK_烤盘_VK_to_CPU = 15;
+const VK_烤盘_VK_to_VK = 16;
+
+// create a vulkan device and set the queue and device
+const VK_烤盘_VK_to_VK = 17;
+const VK_烤盘_VK_to_CPU = 18;
+
+// create a vulkan context and set the queue and device
+const VK_烤盘_VK_to_CPU = 19;
+const VK_烤盘_VK_to_VK = 20;
+
+// create a vulkan image
+const VK_烤盘_VK_to_CPU = 21;
+const VK_烤盘_VK_to_VK = 22;
+
+// create a vulkan context
+const VK_烤盘_VK_to_CPU = 23;
+const VK_烤盘_VK_to_VK = 24;
+
+// create a vulkan device and set the queue and device
+const VK_烤盘_VK_to_CPU = 25;
+const VK_烤盘_VK_to_VK = 26;
+
+// create a vulkan image
+const VK_烤盘_VK_to_CPU = 27;
+const VK_烤盘_VK_to_VK = 28;
+
+// create a vulkan context
+const VK_烤盘_VK_to_CPU = 29;
+const VK_烤盘_VK_to_VK = 30;
+
+// create a vulkan image
+const VK_烤盘_VK_to_CPU = 31;
+const VK_烤盘_VK_to_VK = 32;
+
+// create a vulkan context
+const VK_烤盘_VK_to_CPU = 33;
+const VK_烤盘_VK_to_VK = 34;
+
+// create a vulkan device and set the queue and device
+const VK_烤盘_VK_to_CPU = 35;
+const VK_烤盘_VK_to_VK = 36;
+
+// create a vulkan image
+const VK_烤盘_VK_to_CPU = 37;
+const VK_烤盘_VK_to_VK = 38;
+
+// create a vulkan context
+const VK_烤盘_VK_to_CPU = 39;
+const VK_烤盘_VK_to_VK = 40;
+
+// create a vulkan image
+const VK_烤盘_VK_to_CPU = 41;
+const VK_烤盘_VK_to_VK = 42;
+
+// create a vulkan context
+const VK_烤盘_VK_to_CPU = 43;
+const VK_烤盘_VK_to_VK =
+
+参考：
+ncnn/docs/how-to-use-and-FAQ/FAQ-ncnn-vulkan.md
+ncnn/docs/faq.md",
+  "title": "@茴香豆 "
+}
