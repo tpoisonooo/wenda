@@ -485,8 +485,8 @@ def api_wx_callback():
     #     f.write(jsonstr)
     #     f.write('\n')
 
-    # 瓜球
-    whitelist = ['wxid_raxq4pq3emg212', 'wxid_nl9mlgj0juta21', 'wxid_6jgswnur19fq22']
+    # 瓜球虫星
+    whitelist = ['wxid_raxq4pq3emg212', 'wxid_nl9mlgj0juta21', 'wxid_6jgswnur19fq22', 'wxid_2jxokwwpk4l322']
 
     if messageType == '80014' or messageType == '14':
         target = data['toUser']
@@ -513,6 +513,7 @@ def api_wx_callback():
             content = content[4:]
             resp = getResponse(title, content)
             send(wid, group, resp, title)
+        # 测试群、ncnn 群、mmlab 群
         elif group == '18356748488@chatroom' or group == '18356748488@chatroom':
             if "@茴香豆" in content:
                 content = content[4:]
